@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
 
 :root {
-    font-size: 15px;
-    --primary-gradient: linear-gradient(to right, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
+  font-size: 15px;
+  --primary-gradient: linear-gradient(to right, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 100%);
 }
 
 @tailwind base;
@@ -10,19 +10,19 @@
 @tailwind utilities;
 
 body {
-    @apply min-h-screen text-gray-700 bg-very-light-gray-blue font-montserrat;
+  @apply min-h-screen text-gray-700 bg-very-light-gray-blue font-montserrat;
 }
 
 .img-top-right {
-    @apply absolute w-full;
-    top: -5%;
-    right: -45%;
-    z-index: -10;
+  @apply absolute w-full;
+  top: -5%;
+  right: -45%;
+  z-index: -10;
 }
 
 .img-bottom-left {
-    @apply absolute bottom-0 left-0 invisible w-5/6;
-    z-index: -10;
+  @apply absolute bottom-0 left-0 invisible w-5/6;
+  z-index: -10;
 }
 
 
@@ -32,54 +32,54 @@ body {
 
 
 .pricing-panel {
-    @apply flex flex-wrap justify-center py-16 text-center;
+  @apply flex flex-wrap justify-center py-16 text-center;
 }
 
 h2 {
-    @apply w-full pb-10 text-4xl;
+  @apply w-full pb-10 text-4xl;
 }
 
 .toggle-zone {
-    @apply flex flex-wrap items-center justify-center w-full text-center;
+  @apply flex flex-wrap items-center justify-center w-full text-center;
 }
 
 .toggle-component {
-    @apply mx-4;
+  @apply mx-4;
 }
 
 .checkbox {
-    @apply hidden;
+  @apply hidden;
 }
 
-.checkbox:checked ~ .switch{
-    background: var(--primary-gradient);
-    -webkit-tap-highlight-color: transparent;
+.checkbox:checked~.switch {
+  background: var(--primary-gradient);
+  -webkit-tap-highlight-color: transparent;
 }
 
-.checkbox:checked ~ .switch:before{
-    @apply bg-white;
-    transform: translateX(30px);
+.checkbox:checked~.switch:before {
+  @apply bg-white;
+  transform: translateX(30px);
 }
 
 .switch {
-    @apply box-border block cursor-pointer;
-    background: var(--primary-gradient);
-    border-radius: 20px;
-    height: 30px;
-    width: 60px;
-    padding: 5px;
-    user-select: none;
+  @apply box-border block cursor-pointer;
+  background: var(--primary-gradient);
+  border-radius: 20px;
+  height: 30px;
+  width: 60px;
+  padding: 5px;
+  user-select: none;
 }
 
 .switch::before {
-    @apply block bg-white; 
-    content: "";
-    height: 20px;
-    width: 20px;
-    border-radius: 20px;
-    transform: translateX(0px);
-    transition: 0.3s;
-    will-change: transform;
+  @apply block bg-white;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  transform: translateX(0px);
+  transition: 0.3s;
+  will-change: transform;
 }
 
 
@@ -89,67 +89,67 @@ h2 {
 
 
 .cards {
-    @apply grid grid-cols-1 gap-y-8 gap-x-0;
+  @apply grid grid-cols-1 gap-y-8 gap-x-0;
 }
 
 .card {
-    @apply max-w-sm text-center bg-white shadow-xl rounded-xl;
+  @apply max-w-sm text-center bg-white shadow-xl rounded-xl;
 }
 
 h3 {
-    @apply py-8 text-lg;
+  @apply py-8 text-lg;
 }
 
 .price {
-    @apply flex items-center justify-center pb-8 text-4xl leading-none;
+  @apply flex items-center justify-center pb-8 text-4xl leading-none;
 }
 
 .price span {
-    @apply pl-2 text-6xl;
+  @apply pl-2 text-6xl;
 }
 
 .recommended {
-    @apply text-white rounded-xl;
-    background: var(--primary-gradient);
+  @apply text-white rounded-xl;
+  background: var(--primary-gradient);
 }
 
-.recommended > .button {
-    @apply bg-white;
-    color: var(--primary-gradient);
+.recommended>.button {
+  @apply bg-white;
+  color: var(--primary-gradient);
 }
 
-.benefits > div {
-    @apply py-4;
+.benefits>div {
+  @apply py-4;
 }
 
-.benefits > div:nth-child(odd) {
-    @apply border-t border-b border-gray-400;
+.benefits>div:nth-child(odd) {
+  @apply border-t border-b border-gray-400;
 }
 
 .btn {
-    @apply block w-full px-4 py-3 my-8 text-sm tracking-widest uppercase rounded-md;
-    transition: all 0.4s ease;
+  @apply block w-full px-4 py-3 my-8 text-sm tracking-widest uppercase rounded-md;
+  transition: all 0.4s ease;
 }
 
 .btn:hover {
-    background: transparent;
+  background: transparent;
 }
 
 .btn-primary {
-    @apply text-white border border-nice-purple;
-    background: var(--primary-gradient);
+  @apply text-white border border-nice-purple;
+  background: var(--primary-gradient);
 }
 
 .btn-primary:hover {
-    @apply text-nice-purple;
+  @apply text-nice-purple;
 }
 
 .btn-secondary {
-    @apply bg-white border border-white text-nice-purple;
+  @apply bg-white border border-white text-nice-purple;
 }
 
 .btn-secondary:hover {
-    @apply text-white;
+  @apply text-white;
 }
 
 
@@ -159,11 +159,11 @@ h3 {
 
 
 .attribution {
-    @apply mt-16 mb-4 text-sm text-center;
+  @apply mt-16 mb-4 text-sm text-center;
 }
 
 .attribution a {
-    @apply text-nice-purple;
+  @apply text-nice-purple;
 }
 
 
@@ -173,69 +173,70 @@ h3 {
 
 
 @screen lg {
-    body{
-        @apply flex flex-col content-around;
-    }
+  body {
+    @apply flex flex-col content-around;
+  }
 
-    .img-top-right {
-        @apply top-0 right-0 w-1/3;
-    }
+  .img-top-right {
+    @apply top-0 right-0 w-1/3;
+  }
 
-    .img-bottom-left {
-        @apply visible w-1/3;
-    }
+  .img-bottom-left {
+    @apply visible w-1/3;
+  }
 
-    main {
-        @apply flex-1;
-    }
+  main {
+    @apply flex-1;
+  }
 
-    .cards {
-        @apply grid;
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.05fr);
-        align-items: center;
-    }
+  .cards {
+    @apply grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.05fr);
+    align-items: center;
+  }
 
-    .cards > :first-child {
-        @apply rounded-none rounded-tl-xl rounded-bl-xl;
-    }
-    
-    .cards > :last-child {
-        @apply rounded-none rounded-tr-xl rounded-br-xl;
-    }
+  .cards> :first-child {
+    @apply rounded-none rounded-tl-xl rounded-bl-xl;
+  }
 
-    .card {
-        @apply mx-0;
-    }
+  .cards> :last-child {
+    @apply rounded-none rounded-tr-xl rounded-br-xl;
+  }
 
-    .price span {
-        font-size: 70px;
-    }
+  .card {
+    @apply mx-0;
+  }
 
-    .recommended {
-        @apply max-w-none;
-    }
+  .price span {
+    font-size: 70px;
+  }
 
-    .recommended::before, .recommended::after {
-        @apply invisible h-full;
-        content: ".";
-    }
+  .recommended {
+    @apply max-w-none;
+  }
 
-    .attribution {
-        @apply absolute bottom-0 w-full mt-0;
-        z-index: -10;
-    }
+  .recommended::before,
+  .recommended::after {
+    @apply invisible h-full;
+    content: ".";
+  }
+
+  .attribution {
+    @apply absolute bottom-0 w-full mt-0;
+    z-index: -10;
+  }
 }
 
 @screen xl {
-    .img-top-right {
-        @apply w-1/4;
-    }
+  .img-top-right {
+    @apply w-1/4;
+  }
 
-    .img-bottom-left {
-        @apply w-1/4;
-    }
+  .img-bottom-left {
+    @apply w-1/4;
+  }
 
-    .cards {
-        grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, 1.25fr);
-    }
+  .cards {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, 1.25fr);
+  }
 }
