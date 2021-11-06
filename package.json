@@ -2,27 +2,12 @@
   "name": "pricing-component",
   "version": "1.0.0",
   "description": "Challenge #4 by frontendmentor.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/erianvc/pricing-component.git"
-  },
-  "main": "public/index.html",
+  "private": true,
   "scripts": {
     "watch": "postcss src/tailwind.css -o public/global.css -w",
-    "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css && npm run js:minify",
-    "js:minify": "npx terser src/*.js -c -m toplevel -o public/app.js"
+    "js:minify": "npx terser src/*.js -c -m toplevel -o public/app.js",
+    "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css && npm run js:minify"
   },
-  "keywords": [
-    "tailwindcss",
-    "frontend",
-    "challenge"
-  ],
-  "author": "erianvc",
-  "bugs": {
-    "url": "https://github.com/erianvc/pricing-component/issues"
-  },
-  "homepage": "https://github.com/erianvc/pricing-component#readme",
-  "license": "MIT",
   "devDependencies": {
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.9",

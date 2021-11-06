@@ -1,10 +1,6 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-  },
   purge: ['./**/*.html'],
   theme: {
     screens: {
@@ -20,7 +16,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', ...defaultTheme.fontFamily.mono],
+        montserrat: ['Montserrat', ...fontFamily.mono],
       },
       fontSize: {
         '7xl': '7rem',
