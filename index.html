@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | Pricing Component</title>
-    <meta name="description" content="Challenge #4 by frontendmentor.io">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Pricing Component</title>
+  <meta name="description" content="Challenge #4 by frontendmentor.io" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="preload" href="global.css" as="style">
-    <link rel="stylesheet" href="global.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" />
 
-    <script defer src="app.js"></script>
+  <link rel="preload" href="global.css" as="style" />
+  <link rel="stylesheet" href="global.css" />
+
+  <script defer src="app.js"></script>
 </head>
+
 <body>
 
 
 
-    <img class="img-top-right" src="./images/bg-top.svg" alt="">
+  <img class="img-top-right" src="./images/bg-top.svg" alt=""  />
 
-    <img class="img-bottom-left" src="./images/bg-bottom.svg" alt="">
+  <img class="img-bottom-left" src="./images/bg-bottom.svg" alt=""  />
 
-    <section class="container pricing-panel">
-        <h2>Our Pricing</h2>
+  <section class="container pricing-panel">
+    <h2>Our Pricing</h2>
 
-        <div class="toggle-zone">
-            <span>Annually</span>
-            <div class="toggle-component">
-                <input type="checkbox" id="checkbox" class="checkbox" checked>
-                <label class="switch" for="checkbox"></label>
-            </div>
-            <span>Monthly</span>
+    <div class="toggle-zone">
+      <span>Annually</span>
+      <div class="toggle-component">
+        <input type="checkbox" id="checkbox" class="checkbox" checked  />
+        <label class="switch" for="checkbox"></label>
+      </div>
+      <span>Monthly</span>
+    </div>
+  </section>
+
+  <main>
+    <section class="container cards">
+
+      <article class="container card" style="justify-self: end;">
+        <h3>Basic</h3>
+
+        <div class="price" data-monthly="19.99" data-annually="199.99">
+          &dollar;<span>19.99</span>
         </div>
+
+        <div class="benefits">
+          <div>500 GB Storage</div>
+          <div>2 Users Allowed</div>
+          <div>Send up to 3 GB</div>
+        </div>
+
+        <button class="btn btn-primary">Learn More</button>
+      </article>
+
+
+      <article class="container card recommended">
+        <h3>Professional</h3>
+
+        <div class="price" data-monthly="24.99" data-annually="249.99">
+          &dollar;<span>24.99</span>
+        </div>
+
+        <div class="benefits">
+          <div>1 TB Storage</div>
+          <div>5 Users Allowed</div>
+          <div>Send up to 10 GB</div>
+        </div>
+
+        <button class="btn btn-secondary">Learn More</button>
+      </article>
+
+
+      <article class="container card" style="justify-self: start;">
+        <h3>Master</h3>
+
+        <div class="price" data-monthly="39.99" data-annually="399.99">
+          &dollar;<span>39.99</span>
+        </div>
+
+        <div class="benefits">
+          <div>2 TB Storage</div>
+          <div>10 Users Allowed</div>
+          <div>Send up to 20 GB</div>
+        </div>
+
+        <button class="btn btn-primary">Learn More</button>
+      </article>
+
     </section>
-
-    <main>
-        <section class="container cards">
-
-            <article class="container card" style="justify-self: end;">
-                <h3>Basic</h3>
-
-                <div class="price" data-monthly="19.99" data-annually="199.99">
-                    &dollar;<span>19.99</span>
-                </div>
-
-                <div class="benefits">
-                    <div>500 GB Storage</div>
-                    <div>2 Users Allowed</div>
-                    <div>Send up to 3 GB</div>
-                </div>
-
-                <button class="btn btn-primary">Learn More</button>
-            </article>
-
-
-            <article class="container card recommended">
-                <h3>Professional</h3>
-
-                <div class="price" data-monthly="24.99" data-annually="249.99">
-                    &dollar;<span>24.99</span>
-                </div>
-
-                <div class="benefits">
-                    <div>1 TB Storage</div>
-                    <div>5 Users Allowed</div>
-                    <div>Send up to 10 GB</div>
-                </div>
-
-                <button class="btn btn-secondary">Learn More</button>
-            </article>
-
-
-            <article class="container card" style="justify-self: start;">
-                <h3>Master</h3>
-
-                <div class="price" data-monthly="39.99" data-annually="399.99">
-                    &dollar;<span>39.99</span>
-                </div>
-
-                <div class="benefits">
-                    <div>2 TB Storage</div>
-                    <div>10 Users Allowed</div>
-                    <div>Send up to 20 GB</div>
-                </div>
-
-                <button class="btn btn-primary">Learn More</button>
-            </article>
-
-        </section>
-    </main>
+  </main>
 
 
 
-    <footer class="attribution">
-        Challenge by <a rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
-        <br>
-        Coded by <a rel="noopener noreferrer" href="https://erianvc.dev" target="_blank">erianvc</a>.
-    </footer>
+  <footer class="attribution">
+    Challenge by <a rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>.
+    <br>
+    Coded by <a rel="noopener noreferrer" href="https://erianvc.dev" target="_blank">erianvc</a>.
+  </footer>
 </body>
+
 </html>
