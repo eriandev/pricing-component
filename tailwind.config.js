@@ -1,7 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./**/*.html'],
+  content: ['./**/*.html'],
   theme: {
     screens: {
       xs: '360px',
