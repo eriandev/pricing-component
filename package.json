@@ -9,10 +9,10 @@
     "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css && npm run js:minify"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "cssnano": "^5.0.9",
-    "postcss-cli": "^9.0.2",
-    "tailwindcss": "^2.2.19",
-    "terser": "^5.9.0"
+    "cross-env": "7.0.3",
+    "cssnano": "5.0.17",
+    "postcss-cli": "9.1.0",
+    "tailwindcss": "3.0.23",
+    "terser": "5.11.0"
   }
 }
