@@ -1,1 +1,1 @@
-"use strict";const e=document.getElementById("checkbox"),t=document.querySelectorAll(".price");e.addEventListener("change",(function(n){t.forEach((t=>{t.querySelector("span").textContent=t.getAttribute(e.checked?"data-monthly":"data-annually")}))}));
+"use strict";const e=document.getElementById("checkbox"),t=document.querySelectorAll(".price");e.addEventListener("change",(()=>{t.forEach((t=>{t.querySelector("span").textContent=t.getAttribute(e.checked?"data-monthly":"data-annually")}))}));
