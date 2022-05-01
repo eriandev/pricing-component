@@ -10,9 +10,9 @@
   },
   "devDependencies": {
     "cross-env": "7.0.3",
-    "cssnano": "5.0.17",
+    "cssnano": "5.1.7",
     "postcss-cli": "9.1.0",
-    "tailwindcss": "3.0.23",
-    "terser": "5.11.0"
+    "tailwindcss": "3.0.24",
+    "terser": "5.13.1"
   }
 }
